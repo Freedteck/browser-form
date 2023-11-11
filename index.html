@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Browser Form</title>
+  </head>
+  <body>
+    <h1>Browser Form</h1>
+    <div class="container">
+      <form novalidate>
+        <fieldset>
+          <legend>Js Validation</legend>
+          <label for="mail"
+            >Email
+            <input type="email" name="mail" id="mail" required />
+            <span aria-live=""></span>
+          </label>
+          <label for="country"
+            >Country
+            <select name="country" id="country" required>
+              <option value="" selected disabled>Select Your Country</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="usa">USA</option>
+              <option value="ghana">Ghana</option>
+              <option value="france">France</option>
+            </select>
+          </label>
+          <label for="zip"
+            >Zip Code
+            <input type="text" name="zip" id="zip" minlength="3" required />
+            <span aria-live=""></span>
+          </label>
+          <label for="password"
+            >Password
+            <input type="password" name="password" id="password" minlength="8" required />
+            <span aria-live=""></span>
+          </label>
+          <label for="confirm"
+            >Confirm Password
+            <input type="password" name="confirm" id="confirm" minlength="8" required />
+            <span aria-live=""></span>
+          </label>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
